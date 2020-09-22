@@ -1,0 +1,7 @@
+Semario
+
+miguel palacios
+
+periodo 56
+
+mongo db + nodejs
