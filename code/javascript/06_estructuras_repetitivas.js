@@ -12,10 +12,10 @@ const DECREMENTAR_PESO = 2
 const META = estudiante.peso - 10
 
 const aumentarPeso = (objeto) => objeto.peso += INCREMENTAR_PESO
-const aumentarPeso = (objeto) => objeto.peso -= DECREMENTAR_PESO
+const disminuyePeso = (objeto) => objeto.peso -= DECREMENTAR_PESO
 
-const comeMucho = () => Math.random() <0.6
-const realizaDeporte = () => Math.random() < 0.3  
+const comeMucho = () => Math.random() <0.1
+const realizaDeporte = () => Math.random() < 0.8      
 
 console.log(`Al inicio del año ${estudiante.nombres} pesa ${estudiante.peso}`)
 
