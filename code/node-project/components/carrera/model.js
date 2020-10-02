@@ -13,5 +13,5 @@ const mySchema = new schema({
     descripcion: String,
 })
 
-const model = mongoose.model( 'Carrera', mySchema )
-module.exports = model
+const model = mongoose.model( 'Carrera', mySchema)
+module.exports = model 

@@ -1,7 +1,8 @@
 const storage = require('./storage')
 
 function addCarrera(nombre, abreviatura, descripcion) {
-    return new Promise((resolve, reject) => {
+    console.log('controller')
+    return new Promise( (resolve, reject) => {
         let carrera = {
             nombre: nombre,
             abreviatura: abreviatura,
@@ -23,7 +24,7 @@ function updateCarrera(idCarrera, nombre, abreviatura, descripcion) {
         let carrera = {
             nombre: nombre,
             abreviatura: abreviatura,
-            descripcion: descripcion,
+            descripcion: descripcion, 
         }
         const result = await storage.update(idCarrera, carrera)
         resolve( result )
@@ -42,5 +43,5 @@ module.exports = {
     addCarrera,
     getCarreras,
     updateCarrera,
-    deleteCarrera,
+    deleteCarrera,    
 }

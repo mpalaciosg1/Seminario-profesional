@@ -17,9 +17,9 @@ router.get('/', function(req, res) {
 
 router.post('/', function(req, res) {
     controller.addCarrera( req.body.nombre, req.body.abreviatura, req.body.descripcion )
-        .then((data) => {
+        .then( (data) =>{
             response.success( req, res, data, 201 )        
-        })
+        } )
         .catch((error) => {
             response.error( req, res, error, 500 )        
         })
@@ -27,9 +27,9 @@ router.post('/', function(req, res) {
 
 router.patch('/', function(req, res) {
     controller.updateCarrera( req.body.id_carrera, req.body.nombre, req.body.abreviatura, req.body.descripcion )
-        .then((data) => {
+        .then( (data) => {
             response.success( req, res, data, 201 )        
-        })
+        } )
         .catch((error) => {
             response.error( req, res, error, 500 )        
         })
@@ -37,9 +37,9 @@ router.patch('/', function(req, res) {
 
 router.delete('/', function(req, res) {
     controller.deleteCarrera( req.body.id_carrera )
-        .then((data) => {
+        .then( (data) =>{
             response.success( req, res, data, 201 )        
-        })
+        } )
         .catch((error) => {
             response.error( req, res, error, 500 )        
         })
